@@ -5,9 +5,19 @@ import Sidebar from './Sidebar'
 const Layout = ({ children }) => {
   return (
    <>
-    <Header/>
-    {/* <Sidebar/> */}
-    <main>{children}</main>
+    <div className="flex h-screen">
+
+      <Sidebar />
+
+      <div className="flex-1 flex flex-col">
+
+        <Header />
+
+        <main className="flex-1  bg-gray-100 overflow-y-auto">
+          {children}
+        </main>
+      </div>
+    </div>
    </>
   )
 }

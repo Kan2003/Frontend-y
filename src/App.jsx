@@ -4,11 +4,12 @@ import Layout from "./components/Layout/Layout";
 function App() {
   return (
     <Router>
-
         <Layout>
+        <div className="pl-[280px] bg-[#000000]">
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
+          </div>
         </Layout>
     </Router>
   );

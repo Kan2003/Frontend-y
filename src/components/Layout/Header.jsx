@@ -1,11 +1,24 @@
-import React from 'react'
+import React from "react";
 
 const Header = () => {
   return (
-    <div className='fixed w-full border-b-2 border-b-white h-[50px] top-0 z-50'>
+    <header className="bg-[#000000] border-b-[1px] border-b-white text-white h-[72px] w-full z-10 flex items-center px-5 justify-between">
+      <div className="w-[63px] h-[63px] cursor-pointer">
+        <img
+          className="w-full h-full object-cover"
+          src="/src/assets/Logo.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <input className="bg-[#000000] pt-[10px] outline-none pb-[10px] pl-[14px] pr-[14px] border-[#D0D5DD] border-[1px] w-[400px] " type="text" placeholder="search" />
+      </div>
+      <div className="flex items-center ">
+        <button className="w-[83px] h-[44px] rounded-[8px]">Log In</button>
+        <button className="w-[83px] h-[44px] rounded-[8px] bg-[#AE7AFF] text-[#000000]">Sign Up</button>
+      </div>
+    </header>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Header
+export default Header;
