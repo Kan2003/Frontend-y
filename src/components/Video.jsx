@@ -1,9 +1,8 @@
 import React from "react";
 
 const Video = ({thumbnail , avatar , title , views , videoFile , username}) => {
-    console.log(thumbnail, "thumbnail")
   return (
-    <div className="w-[270px] h-[250px] bg-zinc-700 flex flex-col">
+    <div className="w-[270px] h-[250px] bg-zinc-700 flex flex-col cursor-pointer">
       <div className="w-full h-[134px] overflow-hidden flex justify-center items-center bg-black">
         <img src={thumbnail} className="w-full h-full object-cover object-center" alt="" />
       </div>
@@ -19,7 +18,7 @@ const Video = ({thumbnail , avatar , title , views , videoFile , username}) => {
             </p>
           </div>
           <div className="flex flex-wrap pl-[55px] gap-1 text-sm">
-            <p className="views">{views} |</p>
+            <p className="views">{views} views |</p>
             <p className="time">18 hours ago |</p>
             <p className="owner">{username}</p>
           </div>

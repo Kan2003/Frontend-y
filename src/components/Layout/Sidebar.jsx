@@ -5,6 +5,7 @@ const Sidebar = () => {
     <div className="w-[280px] bg-[#000000] border-r-[1px] border-r-white text-white h-screen fixed flex flex-col justify-between py-[80px]  px-2 ">
       <nav className="flex flex-col justify-between py-4">
         <div className="flex flex-col gap-3">
+          
           <Navlink title="Home" img="/src/assets/home-line.png" />
           <Navlink title="Liked Video" img="/src/assets/like.png" />
           <Navlink title="History" img="/src/assets/Icon.svg" />
